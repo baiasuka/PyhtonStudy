@@ -26,13 +26,13 @@ for user in user_list:
 start = datetime.now()
 df = pd.DataFrame(data, columns=["user", "tag"])
 user_group = df.groupby(["user"])
-print(user_group)
 for item in user_group:
     print(item)
 df["value"] = 1
 
 # 行转列
 r_df = df.pivot(index="user", columns="tag", values="value").fillna(0)
+print(r_df)
 n_df = r_df.loc[:,user_index]
 n_df["score"] = 0
 user_row = n_df.loc["洪文俊"]
