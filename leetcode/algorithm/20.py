@@ -1,5 +1,8 @@
 # 20.有效括号
 class Solution:
+    """
+    使用栈的push和pop操作来判断
+    """
     def isValid(self, s: str) -> bool:
         if len(s) % 2 == 1:
             return False
