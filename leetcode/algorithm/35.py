@@ -2,11 +2,11 @@
 
 class Solution:
     """
-    考察的是查找，可说的是各类查找方法（二分、快排等）
+    考察的是查找，可说的是各类查找方法（顺序、二分、树）
     """
     def searchInsertByBinary(self, nums, target) -> int:
         """
-        二分法查找
+        因为是有序表，可使用二分法查找
         :param nums: List[int]
         :param target: int
         :return:
