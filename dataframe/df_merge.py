@@ -29,4 +29,3 @@ def df_merge():
     f_df = final_df.fillna(0)
     print(f_df)
 
-df_merge()
